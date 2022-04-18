@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.dnu.android.lr2android.CustomView
+            android:id="@+id/cvNote1"
+            android:layout_width="@dimen/dp400"
+            android:layout_height="@dimen/dp86"
+            android:layout_marginTop="@dimen/dp10"
+            app:title="Text1"
+            app:subtitle="Text2"
+            android:background="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.dnu.android.lr2android.CustomView
+            android:id="@+id/cvNote2"
+            android:layout_width="@dimen/dp400"
+            android:layout_height="@dimen/dp86"
+            android:layout_marginTop="@dimen/dp10"
+            android:background="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cvNote1"
+            app:title="Text3"
+            app:subtitle="Text4" />
+
+        <com.dnu.android.lr2android.CustomView
+            android:id="@+id/cvNote3"
+            android:layout_width="@dimen/dp400"
+            android:layout_height="@dimen/dp86"
+            android:layout_marginTop="@dimen/dp10"
+            android:background="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cvNote2"
+            app:title="Text5"
+            app:subtitle="Text6" />
+
+        <com.dnu.android.lr2android.CustomView
+            android:id="@+id/cvNote4"
+            android:layout_width="@dimen/dp400"
+            android:layout_height="@dimen/dp86"
+            android:layout_marginTop="@dimen/dp10"
+            android:background="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cvNote3"
+            app:title="Text7"
+            app:subtitle="Text8" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
